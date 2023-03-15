@@ -1,0 +1,23 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+}
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.menu__list{
+  display: flex;
+}
