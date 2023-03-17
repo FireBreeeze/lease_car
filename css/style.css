@@ -221,3 +221,48 @@ body {
 .why-lease__item-text{
   text-align: left;
 }
+.how-does{
+  padding-bottom: 150px;
+}
+.how-does__inner{
+  max-width: 600px;
+  margin: 0 auto; 
+}
+.how-does__title{
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 50px;
+}
+.how-does__list{
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+}
+.how-does__item{
+  list-style: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  padding: 19px 0 19px 240px;
+  box-sizing: content-box;
+  min-height: 63px;
+}
+.how-does__item + .how-does__item{
+  margin-top: 40px;
+}
+.how-does__item::before{
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  background-color: #0066FF;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
