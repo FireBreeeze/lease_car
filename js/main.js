@@ -34,9 +34,15 @@ function open(evt) {
 // далее в 21 строке добавляем - пробегаемся по контенту и сначала у всех контентов отменяем эктив и потом добавляем эктив тому на кого был клик по id, но нужно его найти по id, поэтому пишем document.querySelector(`#${button}`).classList.add('tabs__content-item--active'); -строка 25  !!!!обратить внимание на другие кавычки у querySelector(`#${button}`!!!!
 
 
-
-
-
+const menuBtn = document.querySelector('.menu__btn');
+// кнопка по которой будет клик
+const menu = document.querySelector('.menu__list');
+// находим наш список-меню - ей будем менять класс
+//пишем событие по клику
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu__list--active');
+  //если клик совершился то меняется класс
+});
 
 
 const swiper = new Swiper(".swiper", {
