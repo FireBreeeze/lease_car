@@ -16,13 +16,13 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">NEW CARS</a>
+                <a class="menu__list-link" href="new-cars.html">NEW CARS</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">PRE-OWNED CARS</a>
@@ -34,7 +34,7 @@
                 <a class="menu__list-link" href="#">LEASE VS BUY</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">CONTACT US</a>
+                <a class="menu__list-link menu__list-link--active" href="contacts.html">CONTACT US</a>
               </li>
             </ul>
           </nav>
@@ -43,9 +43,40 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        
-      </div>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="section-title contacts__title">Contact Us</h2>
+          <p class="contacts__text">Feel free to contact us with questions, potencial partnerships or media inquiries</p>
+          <form class="form" action="#">
+            <input class="form__input" type="text" placeholder="Name">
+            <input class="form__input" type="email" placeholder="E-mail">
+            <textarea class="form__textarea" placeholder="Your text"></textarea>
+            <button class="form__btn btn" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog__items">
+            <div class="blog__item">
+              <img class="blog__item-img" src="images/blog-1.jpg" alt="photo">
+              <h4 class="blog__item-title">An easier way to buy your next Toyota</h4>
+              <a class="blog__item-link" href="#">more</a>
+            </div>
+
+            <div class="blog__item">
+              <img class="blog__item-img" src="images/blog-2.jpg" alt="photo">
+              <h4 class="blog__item-title">A Guide to Road-Tripping With Pets</h4>
+              <a class="blog__item-link" href="#">more</a>
+            </div>
+
+          </div>
+          <a class="showmore__link" href="#">SHOW MORE</a>
+        </div>
+      </section>
+      
     </main>
 
     <footer class="footer">
@@ -152,5 +183,7 @@
     </footer>
 
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
